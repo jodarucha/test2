@@ -97,7 +97,7 @@ p {
 #header .nav-list ul {
 	list-style: none;
 	position: absolute;
-	background-color: rgb(31, 30, 30);
+
 	width: 100vw;
 	height: 100vh;
 	left: 100%;
@@ -702,3 +702,45 @@ p {
 	}
 }
 /* End  Media Query For Desktop */
+
+/* otsegolectric*/
+#prueba{
+	color: white;
+	background-color: #141312;
+}
+
+#prueba p{
+	color: white;
+	background-color: #141312;
+	text-align: center;
+}
+
+/*
+section{
+	height: 100vh;
+	height: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: uppercase;
+}
+
+#section1{
+	background:linear-gradient(-45deg, white 30%, green 0%);
+
+}
+
+#section2{
+	background:linear-gradient(-45deg, white 30%, blue 0%);
+	
+}
+
+#section3{
+	background:linear-gradient(-45deg, white 30%, red 0%);
+	
+}
+
+#section4{
+	background:linear-gradient(-45deg, white 30%, black 0%);
+	
+}*/
