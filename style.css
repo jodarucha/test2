@@ -431,7 +431,7 @@ p {
 	align-items: flex-start;
 	justify-content: center;
 	flex-direction: column;
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	background-image: linear-gradient(60deg, #191a1b 0%, #171718 100%);
 	color: white;
 }
 #projects .project-info h1 {
@@ -565,7 +565,7 @@ p {
 
 /* Footer */
 #footer {
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	background-image: linear-gradient(60deg, #191a1b 0%, #171718 100%);
 }
 #footer .footer {
 	min-height: 200px;
