@@ -50,9 +50,9 @@
             if (isMobile && settings.showPopup) {
                 openPopup();
             }
-            else {
+           /* else {
                 sendWhatsappMessage();
-            }
+            }*/
         });
         //#endregion
 
@@ -115,9 +115,13 @@
                 sendWhatsappMessage();
             });
 
-            this.mouseenter(function () {
+            $button.click(function () {
                 openPopup();
             });
+
+            /*this.mouseenter(function () {
+                openPopup();
+            });*/
 
             if (settings.autoOpenTimeout > 0) {
                 setTimeout(function () {
