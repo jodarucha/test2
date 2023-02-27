@@ -11,6 +11,7 @@
 </head>
 
 <body>
+
 <!-- Floating Button -->
 <div id="myButton"></div>
 <script type="text/javascript">
@@ -60,7 +61,7 @@
   <!-- Slider 2-->
   <style>
     * {box-sizing: border-box}
-    body {font-family: Verdana, sans-serif; margin:0}
+    /*body {font-family: Verdana, sans-serif; margin:0}*/
     .mySlides {display: none}
     img {vertical-align: middle;}
     
@@ -116,7 +117,7 @@
     /* Fading animation */
     .fade {
       animation-name: fade;
-      animation-duration: 1.5s;
+      animation-duration: 4s;
     }
     
     @keyframes fade {
@@ -155,8 +156,8 @@
       <img src="chicago.jpg" style="width:100%">
     </div>
     
-    <a class="prev" onclick="plusSlides(-1)">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a> 
+    <!--<a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a> -->
     
     </div>
     <br>
@@ -181,7 +182,7 @@
     
     function showSlides(n) {
       let i;
-      let slides = document.getElementsByClassName("mySlides");
+      let slides = document.getElementsByClassName("mySlides fade");
       let dots = document.getElementsByClassName("dot");
       if (n > slides.length) {slideIndex = 1}    
       if (n < 1) {slideIndex = slides.length}
@@ -194,7 +195,23 @@
       slides[slideIndex-1].style.display = "block";  
       dots[slideIndex-1].className += " active";
     }
-    </script>
+
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides fade");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 7000); // Change image every 7 seconds
+  }
+  </script>
+
     
   <!-- End slider 2-->
 
@@ -296,14 +313,14 @@
         que operan en un mundo complejo al proporcionar una amplia gama de servicios de seguridad líderes en la industria, 
         brindados por expertos experimentados y bien informados. A través de nuestras soluciones de seguridad integrales, 
         ayudamos a proteger empresas, empleados, comunidades y activos y hacemos del mundo un lugar más seguro.</p>
-        <a href="#" class="cta">LOREM IPSUM</a>
+       <a class="cta">INTEGRIDAD CONFIANZA Y VIGILANCIA</a>
       </div>
     </div>
-  </section>
+  </section><br><br>
   <!-- End About Section -->
 
   <!-- Contact Section -->
-  <div id="contact">
+  <div id="contact" style="margin-bottom: 180px;">
     <div class="contact container">
       <div>
         <h1 class="section-title">CONT<span>A</span>CTO</h1><br>
@@ -317,7 +334,7 @@
           </div>
         </div>
         <div class="contact-item">
-          <div class="icon"><img src="img/contact/a2.png" /></div>
+          <div class="icon"><img src="img/contact/a2.png"></div>
           <div class="contact-info">
             <h1>Email</h1>
             <h2>gescorp8@gmail.com</h2>
@@ -337,8 +354,53 @@
 
     <!-- Projects2 Section -->
  <section id="projects">
-  <img src="img/grid_0 (1).jpg" style="width:100%;">
+  <div class="container3">
+    <img src="img/grid_0 (1).jpg" alt="Nature" style="width:100%;">
+    <div class="text-block">
+      <h1 style="color: #D5A91C; font-size: 3rem;">LOREM IPSUM</h1><br><br>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto amet explicabo praesentium! 
+        Consectetur dolores facere exercitationem eligendi explicabo, porro eaque nobis unde quibusdam sunt.
+         Vitae nulla pariatur porro veniam eaque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto amet explicabo praesentium! 
+         Consectetur dolores facere exercitationem eligendi explicabo, porro eaque nobis unde quibusdam sunt.
+          Vitae nulla pariatur porro veniam eaque.Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p><br><br>
+         <a href="gallery/gallery.html" type="button" class="cta2" style="width: 45%">GALERIA</a>   
+    </div>
+    <div class="text-block2">
+      <h1>LOREM IPSUM</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto amet explicabo praesentium!</p><br><br>
+    </div>
+  </div>
+  
 </section><br><br>
+<style>
+  .container3 {
+  position: relative;
+  font-family: Arial;
+}
+
+.text-block {
+  position: absolute;
+  width: 28%;
+  left: 12%;
+  top: 18%;
+  background-color: transparent;
+  color: white;
+  padding: 20px;
+}
+
+.text-block2{
+  position: absolute;
+  width: 28%;
+  left: 12%;
+  bottom: 2%;
+  background-color: transparent;
+  padding: 20px;
+}
+
+.text-block2 p{
+  color: black;
+}
+</style>
 <!--End Projects Section -->
 
 <!-- Service1 Section -->
@@ -362,12 +424,15 @@
 <!-- End Service Section -->
 
   <!-- Carousel -->
-  <div id="carousel">
+  <div id="carousel" style="margin-bottom: 160px;">
   <h1 class="section-title"><span>ALGUNOS DE</span><br>NUESTROS CLIENTES</h1><br><br>
   <div class="slider">
     <div class="slide-track">
       <div class="slide">
       <img src="img/customers/iata.png"/>
+      </div>
+      <div class="slide">
+        <img src="img/customers/whiting-turner.png"/>
       </div>
       <div class="slide">
       <img src="img/customers/logisticexpress.jpg"/>
@@ -398,10 +463,10 @@
         </div>
         <div class="slide">
           <img src="img/customers/banco-nacional-de-bolivia.png"/>
-          </div>
-          <div class="slide">
+        </div>
+        <div class="slide">
           <img src="img/customers/banco_union.jpg"/>
-          </div>
+        </div>
      <!-- <div class="slide">
       <img src="img/customers/adidas.png" height="100" width="250" alt="" />
       </div>
@@ -431,12 +496,13 @@
       </div>-->
     </div>
   </div>
-  </div><br><br><br>
+  </div>
   <!-- End Carousel -->
 
   <!-- Footer -->
   <section id="footer">
     <div class="footer container">
+      <img src="0a2636c86663599a27e8a17588e526175cd8a50c_hq.gif" class="hidden" id="pokemon">
       <div class="brand">
         <h1><span>G</span>ES<span>C</span>ORP</h1>
       </div>
@@ -460,6 +526,35 @@
   </section>
   <!-- End Footer -->
   <script src="./app.js"></script>
+
+  <button id="summonPokemon">Change pokemon!</div>
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+      $.fn.center = function () {
+        this.css("position","absolute");
+        this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 2) + $(window).scrollTop()) + "px");
+        this.css("left", Math.max(0, (($(window).width() - $(this).outerWidth()) / 2) + $(window).scrollLeft()) + "px");
+        return this;
+      }
+
+      $("#summonPokemon").on("click", function(){
+        $("#pokemon").fadeIn().center();
+        setTimeout(function(){
+          $("#pokemon").fadeOut()
+        }, 1000);
+      });
+    </script>
+
+    <style>
+        .hidden{
+          display: none;
+        }
+    </style>
+
+
+
 </body>
 
 </html>
