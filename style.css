@@ -882,12 +882,12 @@ p {
 /* otsegolectric*/
 #prueba{
 	color: white;
-	background-color: #141312;
+	background-color: black;
 }
 
 #prueba p{
 	color: white;
-	background-color: #141312;
+	background-color: transparent;
 	text-align: center;
 }
 
