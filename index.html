@@ -137,7 +137,7 @@
        <!-- Hero Section  -->
        <section id="hero">
         <div class="hero container">
-          <div>
+          <div style="margin-top: 24%;">
             <!--<h1>Hola, <span></span></h1>-->
             <h1>Bienvenido a<span></span></h1>
             <h1>GESCORP<span></span></h1>
@@ -502,7 +502,6 @@
   <!-- Footer -->
   <section id="footer">
     <div class="footer container">
-      <img src="0a2636c86663599a27e8a17588e526175cd8a50c_hq.gif" class="hidden" id="pokemon">
       <div class="brand">
         <h1><span>G</span>ES<span>C</span>ORP</h1>
       </div>
@@ -527,34 +526,5 @@
   <!-- End Footer -->
   <script src="./app.js"></script>
 
-  <button id="summonPokemon">Change pokemon!</div>
-
-
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script>
-      $.fn.center = function () {
-        this.css("position","absolute");
-        this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 2) + $(window).scrollTop()) + "px");
-        this.css("left", Math.max(0, (($(window).width() - $(this).outerWidth()) / 2) + $(window).scrollLeft()) + "px");
-        return this;
-      }
-
-      $("#summonPokemon").on("click", function(){
-        $("#pokemon").fadeIn().center();
-        setTimeout(function(){
-          $("#pokemon").fadeOut()
-        }, 1000);
-      });
-    </script>
-
-    <style>
-        .hidden{
-          display: none;
-        }
-    </style>
-
-
-
 </body>
-
 </html>
