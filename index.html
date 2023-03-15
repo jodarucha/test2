@@ -8,12 +8,13 @@
   <script type="text/javascript" src="button/jquery-3.3.1.min.js"></script>
   <link rel="stylesheet" href="button/floating-wpp.css">
   <script type="text/javascript" src="button/floating-wpp.js"></script>
+
 </head>
 
-<body>
+<body> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem, voluptates ut natus temporibus ex deleniti minus porro libero consequatur harum molestiae at, commodi sapiente et corrupti explicabo! Fugiat, iusto blanditiis?
 
 <!-- Floating Button -->
-<div id="myButton"></div>
+<div id="myButton" style="z-index: 3;">
 <script type="text/javascript">
     $(function () {
         $('#myButton').floatingWhatsApp({
@@ -30,6 +31,7 @@
         });
     });
 </script>
+</div>
 <!--End Floating Button-->
 
   <!-- Header -->
@@ -46,11 +48,11 @@
             <div class="bar"></div>
           </div>
           <ul>
-            <li><a href="#hero" data-after="Home">Inicio</a></li>
-            <li><a href="#services" data-after="Service">Servicios</a></li>
-            <li><a href="#projects" data-after="Projects">Proyectos</a></li>
-            <li><a href="#about" data-after="About">Acerca De</a></li>
-            <li><a href="#contact" data-after="Contact">Contacto</a></li>
+            <li><a href="#slide-hero" data-after="Inicio">Inicio</a></li>
+            <li><a href="#services" data-after="Servicios">Servicios</a></li>
+            <li><a href="#projects" data-after="Operaciones">Operaciones</a></li>
+            <li><a href="#about" data-after="Acerca De">Acerca De</a></li>
+            <li><a href="#contact" data-after="Contacto">Contacto</a></li>
           </ul>
         </div>
       </div>
@@ -132,33 +134,32 @@
     </style>
     
     <div class="slideshow-container">
-    
-    <div class="mySlides fade">
-       <!-- Hero Section  -->
-       <section id="hero">
-        <div class="hero container">
-          <div style="margin-top: 24%;">
-            <!--<h1>Hola, <span></span></h1>-->
-            <h1>Bienvenido a<span></span></h1>
-            <h1>GESCORP<span></span></h1>
-            <a href="#projects" type="button" class="cta">Conocenos</a>
-          </div>
+      <div id="slide-hero">
+        <div class="mySlides fade">
+          <!-- Hero Section  -->
+          <section id="hero">
+            <div class="hero container">
+              <div style="margin-top: 24%;">
+                <!--<h1>Hola, <span></span></h1>-->
+                <h1>Bienvenido a<span></span></h1>
+                <h1>GESCORP<span></span></h1>
+                <a href="#projects" type="button" class="cta">Conocenos</a>
+              </div>
+            </div>
+          </section>
+          <!-- End Hero Section  -->
         </div>
-      </section>
-      <!-- End Hero Section  -->
-    </div>
-    
-    <div class="mySlides fade">
-      <img src="grid_0 (1).jpg" style="width:100%">
-    </div>
-    
-    <div class="mySlides fade">
-      <img src="chicago.jpg" style="width:100%">
-    </div>
-    
-    <!--<a class="prev" onclick="plusSlides(-1)">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a> -->
-    
+        
+        <div class="mySlides fade">
+          <img src="img/slider/shield-nobar.jpg" style="width:100%; min-height: 100vh;">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="img/slider/chicago.jpg" style="width:100%; min-height: 100vh;">
+        </div>
+        <!--<a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a> -->
+      </div>
     </div>
     <br>
     
@@ -208,7 +209,7 @@
     myIndex++;
     if (myIndex > x.length) {myIndex = 1}    
     x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 7000); // Change image every 7 seconds
+    setTimeout(carousel, 8000); // Change image every 7 seconds
   }
   </script>
 
@@ -224,22 +225,22 @@
     </div>
     <div class="service-bottom">
       <div class="service-item">
-        <div class="icon"><img src="img/services/s1.png" href=".seg_fisica.htlml"></div>
+        <div class="icon"><img src="img/services/s1.png" href="seg_fisica.html"></div>
         <a href="seg_fisica.html" type="button" class="cta2">Seguridad Fisica</a>
         <!--<div class="icon2"><img src="img/gold.jpg"></div> -->
       </div>
       <div class="service-item">
-        <div class="icon"><img src="img/services/s2.png" href=".seg_electronica.htlml"></div>
+        <div class="icon"><img src="img/services/s2.png" href="seg_electronica.html"></div>
         <a href="seg_electronica.html" type="button" class="cta2">Seguridad Electronica</a>
         <!--<div class="icon2"><img src="img/gold.jpg"></div> -->
       </div>
       <div class="service-item">
-        <div class="icon"><img src="img/services/s3.png" href=".seg_rastreo.htlml">></div>
+        <div class="icon"><img src="img/services/s3.png" href="seg_rastreo.html">></div>
         <a href="seg_rastreo.html" type="button" class="cta2">Rastreo y Monitoreo</a>
         <!--<div class="icon2"><img src="img/gold.jpg"></div> -->
       </div>
       <div class="service-item">
-        <div class="icon"><img src="img/services/s4.png" href=".seg_custodio.htlml"></div>
+        <div class="icon"><img src="img/services/s4.png" href="seg_custodio.html"></div>
         <a href="seg_custodio.html" type="button" class="cta2">Custodio y Escoltas</a>
             <!--<div class="icon2"><img src="img/gold.jpg"></div> -->
       </div>
@@ -313,7 +314,7 @@
         que operan en un mundo complejo al proporcionar una amplia gama de servicios de seguridad líderes en la industria, 
         brindados por expertos experimentados y bien informados. A través de nuestras soluciones de seguridad integrales, 
         ayudamos a proteger empresas, empleados, comunidades y activos y hacemos del mundo un lugar más seguro.</p>
-       <a class="cta">INTEGRIDAD CONFIANZA Y VIGILANCIA</a>
+       <a class="cta" style="margin-bottom: 20px;">INTEGRIDAD CONFIANZA Y VIGILANCIA</a>
       </div>
     </div>
   </section><br><br>
@@ -327,21 +328,21 @@
       </div>
       <div class="contact-items">
         <div class="contact-item">
-          <div class="icon"><img src="img/contact/a1.png" /></div>
+          <div class="icon"><img src="img/contact/a1.png" style="min-width: 40px;"/></div>
           <div class="contact-info">
             <h1>Teléfono</h1>
             <h2>+591 72446300</h2>
           </div>
         </div>
         <div class="contact-item">
-          <div class="icon"><img src="img/contact/a2.png"></div>
+          <div class="icon"><img src="img/contact/a2.png" style="min-width: 40px;"></div>
           <div class="contact-info">
             <h1>Email</h1>
             <h2>gescorp8@gmail.com</h2>
           </div>
         </div>
         <div class="contact-item">
-          <div class="icon"><img src="img/contact/a3.png" /></div>
+          <div class="icon"><img src="img/contact/a3.png" style="min-width: 40px;"/></div>
           <div class="contact-info">
             <h1>Dirección</h1>
             <h2>Calle Venezuela, Zona Plan 40 s/n</h2>
@@ -353,53 +354,30 @@
   <!-- End Contact Section -->
 
     <!-- Projects2 Section -->
- <section id="projects">
+ 
   <div class="container3">
-    <img src="img/grid_0 (1).jpg" alt="Nature" style="width:100%;">
-    <div class="text-block">
-      <h1 style="color: #D5A91C; font-size: 3rem;">LOREM IPSUM</h1><br><br>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto amet explicabo praesentium! 
-        Consectetur dolores facere exercitationem eligendi explicabo, porro eaque nobis unde quibusdam sunt.
-         Vitae nulla pariatur porro veniam eaque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto amet explicabo praesentium! 
-         Consectetur dolores facere exercitationem eligendi explicabo, porro eaque nobis unde quibusdam sunt.
-          Vitae nulla pariatur porro veniam eaque.Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p><br><br>
-         <a href="gallery/gallery.html" type="button" class="cta2" style="width: 45%">GALERIA</a>   
-    </div>
-    <div class="text-block2">
-      <h1>LOREM IPSUM</h1>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto amet explicabo praesentium!</p><br><br>
+    <!-- Hero2 Section  -->
+    <section id="hero2">
+      <div class="hero2 container">
+        <div style="margin-top: 24%;">
+       
+         <!-- <h1>Bienvenido a<span></span></h1>
+          <h1>GESCORP<span></span></h1><br><br>
+          <a href="gallery/gallery.html" type="button" class="cta2" style="width: 64%;">GALERIA</a>-->
+          <p style="color: #D5A91C; font-size: 4.5rem;">LOREM IPSUM<span></span></p>
+          <p style="font-size: 4rem;">Lorem Ipsum<span></span></p>
+          <p style="font-size: 4rem;">Lorem Ipsum<span></span></p>
+          <a href="gallery/gallery.html" type="button" class="cta2" style="width: 56%; margin-top: 10px;">GALERIA</a>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero2 Section  -->
     </div>
   </div>
   
-</section><br><br>
 <style>
-  .container3 {
-  position: relative;
-  font-family: Arial;
-}
 
-.text-block {
-  position: absolute;
-  width: 28%;
-  left: 12%;
-  top: 18%;
-  background-color: transparent;
-  color: white;
-  padding: 20px;
-}
 
-.text-block2{
-  position: absolute;
-  width: 28%;
-  left: 12%;
-  bottom: 2%;
-  background-color: transparent;
-  padding: 20px;
-}
-
-.text-block2 p{
-  color: black;
-}
 </style>
 <!--End Projects Section -->
 
@@ -503,28 +481,51 @@
   <section id="footer">
     <div class="footer container">
       <div class="brand">
-        <h1><span>G</span>ES<span>C</span>ORP</h1>
+       <button id="summonPokemon" style="background-color: transparent; border-style: none; cursor: pointer;" ><h1><span>G</span>ES<span>C</span>ORP</h1></button>
       </div>
-      <h2>Tu Compañía de Seguridad de Confianza</h2>
+      <h2 style="text-align: center;">Tu Compañía de Seguridad de Confianza</h2>
       <div class="social-icon">
+        
         <div class="social-item">
-          <a href="#"><img src="img/footer/i1_1.svg" /></a>
+          <a><img src="img/footer/i1_1.svg" /></a>
         </div>
         <div class="social-item">
-          <a href="#"><img src="img/footer/i2_1.svg" /></a>
+          <a><img src="img/footer/i2_1.svg" /></a>
         </div>
         <div class="social-item">
-          <a href="#"><img src="img/footer/i3_1.svg" /></a>
+          <a><img src="img/footer/i3_1.svg" /></a>
         </div>
         <div class="social-item">
-          <a href="#"><img src="img/footer/i4_1.svg" /></a>
+          <a><img src="img/footer/i4_1.svg" /></a>
         </div>
       </div>
-      <p>Copyright © 2023 Gescorp. Todos los Derechos Reservados</p>
+      <p style="text-align: center;">Copyright © 2023 Gescorp. Todos los Derechos Reservados</p>
     </div>
   </section>
   <!-- End Footer -->
   <script src="./app.js"></script>
 
+  <div class="easter"><img src="img/easter/115.gif" class="hidden" id="pokemon" style="display: none; width: 100px; height: 100px;"></div>
+   <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+    <script>
+      $.fn.center = function () {
+        this.css("position","absolute");
+        this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 2) + $(window).scrollTop()) + "px");
+        this.css("left", Math.max(0, (($(window).width() - $(this).outerWidth()) / 2) + $(window).scrollLeft()) + "px");
+        return this;
+      }
+      var eventClick = 0;
+      $("#summonPokemon").on("click", function(){
+        eventClick++;  
+        if (eventClick === 3) {
+          $("#pokemon").fadeIn().center();
+          setTimeout(function(){
+          $("#pokemon").fadeOut()
+          }, 2000);;
+          eventClick = 0;
+        };
+      });
+    </script>
 </body>
 </html>
+

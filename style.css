@@ -113,6 +113,7 @@ img {
 	width: 100%;
 	object-fit: cover;
 }
+
 p {
 	color: white;
 	font-size: 1.4rem;
@@ -308,9 +309,10 @@ p {
 }
 /* End Header section */
 
+
 /* Hero Section */
 #hero {
-	background-image: url(./img/knight5.png);
+	background-image: url(./img/slider/knight5.png);
 	background-size: cover;
 	background-position: top center;
 	position: relative;
@@ -324,7 +326,7 @@ p {
 	top: 0;
 	height: 100%;
 	width: 100%;
-	background-color: black;
+	background-color: rgba(0, 0, 0, 0.5);
 	opacity: 0.7;
 	z-index: -1;
 }
@@ -374,6 +376,55 @@ p {
 	animation-delay: 2.5s;
 }
 /* End Hero Section */
+
+/* Hero 2*/
+#hero2 {
+	background-image: url(./img/shield-backup.jpg);
+	background-size: cover;
+	background-position: top center;
+	position: relative;
+	min-height: 102vh;
+}
+
+#hero2 p{
+	padding-bottom: 20px;
+}
+
+/*#hero2::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}*/
+
+#hero2 .hero2 {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 50px;
+	justify-content: flex-start;
+}
+#hero2 h1 {
+	display: block;
+	width: fit-content;
+	font-size: 4rem;
+	position: relative;
+	color: white;
+
+}
+
+#hero2 h1 span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 0;
+	background-color: #D5A91C;
+}
+
+/* End Hero 2*/
+
 
 /* Services Section */
 #services .services {
@@ -671,9 +722,14 @@ p {
 
 
 /* Footer */
+#footer button{
+font-family: 'Montserrat', sans-serif;
+}
+
 #footer {
 	background-image: linear-gradient(60deg, #191a1b 0%, #171718 100%);
 }
+
 #footer .footer {
 	min-height: 200px;
 	flex-direction: column;
@@ -681,6 +737,7 @@ p {
 	padding-bottom: 10px;
 }
 #footer h2 {
+	font-family: 'Montserrat', sans-serif !important;
 	color: white;
 	font-weight: 500;
 	font-size: 1.8rem;
@@ -890,4 +947,85 @@ p {
 	background-color: transparent;
 	text-align: center;
 }
+
+
+.gallery h3 span{
+	color: #D5A91C;
+}
+
+.gallery {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 40px 20px 0 20px;
+}
+
+.gallery .heading{
+  width: 50%;
+  padding-bottom: 50px;
+}
+.gallery .heading h3{
+  font-size: 3em;
+  font-weight: bolder;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #D5A91C;;
+}
+
+.gallery .heading h3 span{
+  font-weight: 100;
+}
+.gallery .box{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+}
+
+.gallery .box .dream{
+  display: flex;
+  flex-direction: column;
+  width: 32.5%;
+}
+
+.gallery .box .dream img{
+  width: 100%;
+  padding-bottom: 15px;
+  border-radius: 5px;
+}
+
+.gallery .btn{
+  margin: 40px 0 70px 0;
+  background: #222;
+  padding: 15px 40px ;
+  border-radius: 5px;
+}
+
+.gallery .btn a{
+ color: #fff;
+ font-size: 1.2em;
+ text-decoration: none;
+ font-weight: bolder;
+ letter-spacing: 3px;
+}
+
+@media only screen and (max-width: 769px){
+    .gallery .box{
+   flex-direction: column;
+  }
+
+.gallery .box .dream{
+  width: 100%;
+}
+}
+
+@media only screen and (max-width: 643px){
+.gallery .heading{
+  width: 100%;
+}
+.gallery .heading h3{
+  font-size: 1em;
+
+}}
 
